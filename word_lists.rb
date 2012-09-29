@@ -10,7 +10,7 @@ class WordLists
     File.open('./word_lists.txt', 'r') do |fin|
       hash_def = fin.lines.map do |line|
         parts = line.strip.split('#')
-        WordList.new parts[0], parts[1].split(',') unless parts.length != 2 || parts[0] == ""
+        WordList.new parts[0], parts[1].split('|') unless parts.length != 2 || parts[0] == ""
       end.
       reject(&:nil?).
       map do | list |
