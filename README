@@ -1,9 +1,0 @@
-# Intro
-
-For use with the BuzzwordBingo application
-
-# Running
-
-    bundle install
-    foreman start
-
